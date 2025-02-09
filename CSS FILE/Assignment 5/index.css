@@ -1,0 +1,350 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/*My code******** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 73px;
+    padding: 10px 4rem;
+    font: 2rem;
+    border-bottom: 1px solid black;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+  }
+  .acc {
+    width: 91px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  .section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+  }
+  .main {
+    height: 892px;
+    width: 892px;
+    display: flex;
+    /* border-radius: 0px, 6px, 6px, 0px; */
+  }
+  .checkout {
+    width: calc(892px - 312px);
+    height: 795px;
+    background-color: #ffffff;
+    border-radius: 6px 0 0 6px;
+  }
+  .sidebar {
+    width: 312px;
+    height: 795px;
+    background-color: #1179bf;
+    border-radius: 0 6px 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+  .checkout h2 {
+    /* margin: 30px; */
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 3rem 3rem;
+    color: #1d2c3c;
+    border-bottom: 1px solid rgba(245, 247, 250, 1);
+    text-shadow: #1d2c3c;
+  }
+  .basic {
+    width: 580px;
+    height: 240px;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid rgba(245, 247, 250, 1);
+  }
+  .number {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(84, 139, 197, 1);
+    color: rgba(84, 139, 197, 1);
+    border-radius: 50px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .okay {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(29, 44, 60, 1);
+  }
+  form .details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  form .details p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  form .details input {
+    width: 227px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: rgba(237, 239, 242, 1);
+    border: none;
+  }
+  form .details input::placeholder {
+    font-size: 14px;
+    color: rgba(100, 110, 122, 1);
+    font-weight: 400;
+    padding: 1rem;
+  }
+  #email p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  #email input {
+    width: 370px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: rgba(237, 239, 242, 1);
+    border: none;
+    margin-bottom: 2rem;
+  }
+  #email input::placeholder {
+    font-size: 14px;
+    color: rgba(100, 110, 122, 1);
+    font-weight: 400;
+    padding: 1rem;
+  }
+  .purchase {
+    padding: 3rem 3rem;
+    height: 146.1px;
+    width: 483px;
+  }
+  .purchase button {
+    width: 483px;
+    height: 52px;
+    background-color: rgba(3, 142, 125, 1);
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .help {
+    margin-bottom: 20px;
+  }
+  .dis {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* sidebar */
+  .sidecontent {
+    width: 231px;
+    height: 700px;
+    position: relative;
+  }
+  .plan {
+  }
+  .plan h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  .plan .sup {
+    font-size: 30px;
+    position: absolute;
+    left: -1px;
+    font-weight: 700;
+  }
+  .plan .nine {
+    font-weight: 500;
+    font-size: 70px;
+    margin-left: 20px;
+  }
+  .ye {
+    font-size: 24px;
+    margin-left: 5px;
+    /* margin-bottom: 5px; */
+  }
+  .plan p {
+    width: 180px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 6px;
+  }
+  .dets p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0;
+    margin-top: 25px;
+  }
+  .dets p::before {
+    content: "";
+    display: inlines;
+    background-image: url(./asset/Combined\ Shape\ Copy\ 2\ \(1\).svg);
+    /* background-size: contain; */
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    float: left;
+  }
+  .help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .help p {
+    width: 310px;
+  }
+  .help p::before {
+    content: "";
+    display: inlines;
+    background-image: url(./asset/Mask\ \(1\).png);
+    /* background-size: contain; */
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+    float: left;
+  }
+  .switch {
+    width: 189px;
+    margin-top: 30px;
+    line-height: 19.2px;
+  }
+  .switch p ~ p {
+    margin: 8px 0;
+    font-weight: 700;
+    width: 189px;
+    border-bottom: 5px solid #b9f5ff;
+  }
+  hr {
+    height: 2px;
+    opacity: 0.6px;
+    background-color: #ffffff;
+    margin: 30px 0;
+  }
+  .qoute {
+    width: 224px;
+  }
+  .qoute p {
+    width: 227px;
+    font-style: italic;
+    font-size: 18px;
+  }
+  .qoute h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .qoute h2::before {
+    content: "";
+    display: inlines;
+    background-image: url(./asset/Bitmap.png);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+    float: left;
+  }
